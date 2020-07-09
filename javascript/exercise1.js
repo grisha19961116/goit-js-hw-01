@@ -6,11 +6,11 @@
 // Використовуючи стандартний рядок виведи в консоль інформацію про товар, вийде: 'Обрано «Генератор захисного поля», ціна за штуку 1000 кредитів'.
 // Присвой товару нову ціну - 2000
 // Використовуючи стандартний рядок виведи в консоль інформацію про товар, вийде: 'Обрано «Генератор захисного поля», ціна за штуку 2000 кредитів'.
-let count;
-count = 1000;
-const name = "'Генератор захисного поля";
-let price = ", ціна за штуку "+`${count}`+" кредитів'." ;
-console.log(name,price);
-count = 2000;
-price = ", ціна за штуку "+`${count}`+" кредитів'." ;
-console.log(name,price);
+let name = 'laptop';
+let price = 1000 ;
+let generalInformationAboutProcess = `Обрано ${name} "Генератор захисного поля", ціна за штуку ${price} кредитів.`;
+console.log(generalInformationAboutProcess);
+name = 'keyaboard' ;
+price = 2000;
+generalInformationAboutProcess = `Обрано ${name} "Генератор захисного поля", ціна за штуку ${price} кредитів.`;
+console.log(generalInformationAboutProcess);

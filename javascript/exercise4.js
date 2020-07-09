@@ -12,15 +12,19 @@
 // в іншому випадку необхідно порахувати залишок кредитів на рахунку і вивести повідомлення 'Ви купили [число] дроїдів, на рахунку залишилося [число] кредитів.'.?
 let credits = 23580;
 let pricePerDroid = 3000;
-const message = "How many Do you want buy 'Droids'?Write in thing";
-let  put = prompt(message);
-if(credits < pricePerDroid){
-    const atention = 'Недостатньо коштів на рахунку!';
-    console.log(atention);
-} else if(put === null) {
-    const wrong = 'Скасовано користувачем!';
-    console.log(wrong)
-} else if(credits > pricePerDroid){
-    const totalPrice = put*pricePerDroid;
-    console.log(totalPrice);
+let message = "How many Do you want to buy 'Droids'?Write in thing";
+let  input = prompt(message);
+const totalPrice = input*pricePerDroid;
+if(input === null){
+        message = 'user is canceled!';
+} else if(Number.isNaN(Number(input))){
+    message = 'you put not a number!please rewrete!';
+} else if(credits < totalPrice) {
+    message = 'do not have enough many on your rent!';
+} else {
+    message = `You buy ${input} droids. Cost per droid is ${pricePerDroid},
+total prise is ${totalPrice}. You have ${credits - totalPrice} money after buy.`
 }
+console.log(message);
+alert(message);
+
