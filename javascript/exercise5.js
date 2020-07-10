@@ -25,31 +25,31 @@ if(newInput !== null){
 switch(newInput){
     case 'china':
         rent="100";
-        price = `Delivery ${input} will be cost  ${rent} coins`;
+        price = `Delivery ${newInput} will be cost  ${rent} coins`;
         console.log(price);
         alert(price);
         break;
     case 'chili':
         rent="250";
-        price = `Delivery ${input} will be cost  ${rent} coins`;
+        price = `Delivery ${newInput} will be cost  ${rent} coins`;
         console.log(price);
         alert(price);
         break;
     case 'australia':
         rent="170";
-        price = `Delivery ${input} will be cost  ${rent} coins`;
+        price = `Delivery ${newInput} will be cost  ${rent} coins`;
         console.log(price);
         alert(price);
         break;
     case 'india':
         rent="80";
-        price = `Delivery ${input} will be cost  ${rent} coins`;
+        price = `Delivery ${newInput} will be cost  ${rent} coins`;
         console.log(price);
         alert(price);
         break;
     case 'jamika':
         rent="120";
-        price = `Delivery ${input} will be cost  ${rent} coins`;
+        price = `Delivery ${newInput} will be cost  ${rent} coins`;
         console.log(price);
         alert(price);
         break;
