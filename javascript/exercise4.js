@@ -10,10 +10,10 @@
 // Перевіряє чи зможе користувач оплатити замовлення:
 // якщо сума до оплати перевищує кількість кредитів на рахунку, виводь в консоль повідомлення 'Недостатньо коштів на рахунку!'.
 // в іншому випадку необхідно порахувати залишок кредитів на рахунку і вивести повідомлення 'Ви купили [число] дроїдів, на рахунку залишилося [число] кредитів.'.?
-let credits = 23580;
-let pricePerDroid = 3000;
+const credits = 23580;
+const pricePerDroid = 3000;
 let message = "How many Do you want to buy 'Droids'?Write in thing";
-let  input = prompt(message);
+const  input = prompt(message);
 const totalPrice = input*pricePerDroid;
 if(input === null){
         message = 'user is canceled!';

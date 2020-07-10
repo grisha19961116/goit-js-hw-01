@@ -21,5 +21,6 @@ do{
     input = Number(input)
     total +=input;
 } while(true);
-console.log(alert('General amount which you have put is ' + total))
+console.log('General amount which you have put is ' + total);
+alert('General amount which you have put is ' + total);
 

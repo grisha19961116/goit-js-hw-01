@@ -10,11 +10,12 @@
 // const total = 100;
 // const ordered = 50;
 let total = 100;
-let ordered = 130;
-const atention ="На складі недостатньо товарів!";
-const accepted = "Замовлення оформлено, з вами зв'яжеться менеджер";
+let ordered = 100;
+const atention ="We dont have enough products on storehouse!";
+const accepted = "Oreder is accepted ,our maneger going to call you!";
 if(ordered > total) {
     console.log(atention)
 } else{
     console.log(accepted)
 }
+

@@ -9,18 +9,30 @@
 // Після всіх перевірок вивести в alert значення змінної message.
 // const ADMIN_PASSWORD = 'jqueryismyjam';
 // let message;
-const message = "Put your password pleas";
-let  put = prompt(message);
-prompt(message);
-const ADMIN_PASSWORD = 'jqueryismyjam';
-if(put === ADMIN_PASSWORD){
-   const accepted = 'Ласкаво просимо!';
-   console.log(accepted) 
-} else if(put === null){
-    const bag = 'Скасовано користувачем!';
-    console.log(bag)
+// const message = "Put your password pleas";
+// let  put = prompt(message);
+// prompt(message);
+// const ADMIN_PASSWORD = 'jqueryismyjam';
+// if(put === ADMIN_PASSWORD){
+//    const accepted = 'Ласкаво просимо!';
+//    console.log(accepted) 
+// } else if(put === null){
+//     const bag = 'Скасовано користувачем!';
+//     console.log(bag)
+// }
+//  else {
+//     const wrong = 'Доступ заборонений, невірний пароль!';
+//     console.log(wrong)
+// }
+let message = "Put your password pleas";
+const  input = prompt(message);
+const ADMIN_PASSWORD = 'HasaJama2020';
+if(input === null){
+    message = 'User canceled!';
+} else if(input === ADMIN_PASSWORD){
+    message = 'Well come!';
+} else{
+    message = 'You can not pass ,password is wrong!';
 }
- else {
-    const wrong = 'Доступ заборонений, невірний пароль!';
-    console.log(wrong)
-}
+    console.log(message);
+    alert(message);

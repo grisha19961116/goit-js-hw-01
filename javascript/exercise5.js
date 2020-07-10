@@ -14,44 +14,51 @@
 // Австралія - 170 кредитів
 // Індія - 80 кредитів
 // Ямайка - 120 кредитів
-const message = "Put please name country from which you want order.";
-let  put = prompt(message);
-let newPut = put;
-const nameForCheck ='китай';
+let message = "Put please name country from which you want order.";
+let  input = prompt(message);
+let newInput = input;
 let rent;
-let price ='Доставка в '+put+ " буде коштувати "+rent +" кредитів";
-if(newPut != null){
-    newPut = put.toLocaleLowerCase();
+let price = `Delivery ${input} will be cost  ${rent} coins`;
+if(newInput !== null){
+    newInput = input.toLocaleLowerCase();
 }
-switch(newPut){
-    case 'китай':
+switch(newInput){
+    case 'china':
         rent="100";
-        price ='Доставка в '+put.toLocaleLowerCase()+ " буде коштувати "+rent +" кредитів";
-        console.log(price)
+        price = `Delivery ${input} will be cost  ${rent} coins`;
+        console.log(price);
+        alert(price);
         break;
-    case 'чілі':
+    case 'chili':
         rent="250";
-        price ='Доставка в '+put.toLocaleLowerCase()+ " буде коштувати "+rent +" кредитів";
-        console.log(price)
+        price = `Delivery ${input} will be cost  ${rent} coins`;
+        console.log(price);
+        alert(price);
         break;
-    case 'австралія':
+    case 'australia':
         rent="170";
-        price ='Доставка в '+put.toLocaleLowerCase()+ " буде коштувати "+rent +" кредитів";
-        console.log(price)
+        price = `Delivery ${input} will be cost  ${rent} coins`;
+        console.log(price);
+        alert(price);
         break;
-    case 'індія':
+    case 'india':
         rent="80";
-        price ='Доставка в '+put.toLocaleLowerCase()+ " буде коштувати "+rent +" кредитів";
-        console.log(price)
+        price = `Delivery ${input} will be cost  ${rent} coins`;
+        console.log(price);
+        alert(price);
         break;
-    case 'ямайка':
+    case 'jamika':
         rent="120";
-        price ='Доставка в '+put.toLocaleLowerCase()+ " буде коштувати "+rent +" кредитів";
-        console.log(price)
+        price = `Delivery ${input} will be cost  ${rent} coins`;
+        console.log(price);
+        alert(price);
         break;
-    default:if(newPut===null){
-        console.log("Користувач закрив вікно!")
+    default:if(newInput===null){
+        console.log("User canceled window!")
     } else {
-        alert('У вашій країні доставка недоступна');    
+        message = 'In your country deliveri is not access';  
+        console.log(message);
+        alert(message);  
     }  
 }
+
