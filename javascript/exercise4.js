@@ -14,17 +14,20 @@ const credits = 23580;
 const pricePerDroid = 3000;
 let message = "How many Do you want to buy 'Droids'?Write in thing";
 const  input = prompt(message);
-const totalPrice = input*pricePerDroid;
+let totalPrice;
 if(input === null){
         message = 'user is canceled!';
-} else if(Number.isNaN(Number(input))){
+} else { if(Number.isNaN(Number(input))){
     message = 'you put not a number!please rewrete!';
-} else if(credits < totalPrice) {
+} else {
+    totalPrice = Number(input)*pricePerDroid;
+     if(credits < totalPrice) {
     message = 'do not have enough many on your rent!';
 } else {
     message = `You buy ${input} droids. Cost per droid is ${pricePerDroid},
 total prise is ${totalPrice}. You have ${credits - totalPrice} money after buy.`
+    }
+  }
 }
 console.log(message);
 alert(message);
-

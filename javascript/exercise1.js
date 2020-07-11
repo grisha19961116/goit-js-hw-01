@@ -6,11 +6,10 @@
 // Використовуючи стандартний рядок виведи в консоль інформацію про товар, вийде: 'Обрано «Генератор захисного поля», ціна за штуку 1000 кредитів'.
 // Присвой товару нову ціну - 2000
 // Використовуючи стандартний рядок виведи в консоль інформацію про товар, вийде: 'Обрано «Генератор захисного поля», ціна за штуку 2000 кредитів'.
-let name = 'laptop';
+const name = "Generator protection field";
 let price = 1000 ;
-let generalInformationAboutProcess = `Обрано ${name} "Генератор захисного поля", ціна за штуку ${price} кредитів.`;
+let generalInformationAboutProcess = `Chosen "${name}" , price per think is ${price} credits.`;
 console.log(generalInformationAboutProcess);
-name = 'keyaboard' ;
 price = 2000;
-generalInformationAboutProcess = `Обрано ${name} "Генератор захисного поля", ціна за штуку ${price} кредитів.`;
+generalInformationAboutProcess = `Chosen "${name}" , price per think is ${price} credits.`;
 console.log(generalInformationAboutProcess);

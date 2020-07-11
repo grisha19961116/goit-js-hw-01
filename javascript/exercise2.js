@@ -9,13 +9,13 @@
 
 // const total = 100;
 // const ordered = 50;
-let total = 100;
-let ordered = 100;
-const atention ="We dont have enough products on storehouse!";
-const accepted = "Oreder is accepted ,our maneger going to call you!";
+const total = 100;
+const ordered = 90;
+let message;
 if(ordered > total) {
-    console.log(atention)
+    message = "We dont have enough products on storehouse!";
 } else{
-    console.log(accepted)
+    message = "Oreder is accepted ,our maneger going to call you!";
 }
+console.log(message);
 
