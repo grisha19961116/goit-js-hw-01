@@ -11,16 +11,23 @@
 // // let input;
 // // let total = 0;
 let total = 0;
-let input;
 const message = "Put amount which you wish";
+let conclusion;
+let input;
 do{
-    let input = prompt(message);
+    input = prompt(message);
     if(input === null){
+        conclusion = 'General amount which you have put is ';
+        break;
+    } 
+    input = Number(input);
+    total +=input;
+    if(Number.isNaN(Number(input))){
+        conclusion = 'You put not a number!Please rewrete!';
+        total = 'That!';
         break;
     }
-    input = Number(input)
-    total +=input;
 } while(true);
-console.log('General amount which you have put is ' + total);
-alert('General amount which you have put is ' + total);
+console.log(`${conclusion} ${total}`);
+alert(`${conclusion} ${total}`);
 
