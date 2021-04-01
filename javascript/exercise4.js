@@ -1,31 +1,34 @@
-// Завдання 4
-// На рахунку користувача є 23580 кредитів, значення зберігається в змінній credits (створи і привласни). Користувач вирішує купити ремонтних дроїд, які коштують по 3000 кредитів за штуку. Ціна одного дроїда зберігається в змінній pricePerDroid (створи і привласни).
-
-// При відвідуванні сторінки, використовуючи prompt, необхідно запитати кількість дроїдів, які користувач хоче купити і зберегти в змінну.
-
-// Напиши скрипт який:
-
-// Якщо в prompt була натиснута кнопка Cancel, виводить в консоль повідомлення 'Скасовано користувачем!'.
-// В іншому випадку, розраховує загальну ціну замовлення і зберігає в змінній totalPrice.
-// Перевіряє чи зможе користувач оплатити замовлення:
-// якщо сума до оплати перевищує кількість кредитів на рахунку, виводь в консоль повідомлення 'Недостатньо коштів на рахунку!'.
-// в іншому випадку необхідно порахувати залишок кредитів на рахунку і вивести повідомлення 'Ви купили [число] дроїдів, на рахунку залишилося [число] кредитів.'.?
+// Exercise 4
+// On user balance is 23580 credits , values save in variable  'credits' (create and assign).
+//User decide buy fix Droids which costs 3000 credits by think.Price for one Droid save in
+//variables 'pricePerDroid' (create and assign).
+// During visit user page using prompt, requirement do request about quantity Droids,
+// which user want buy and save into variable.Write script which does:
+// If in  prompt was pressed button Cancel than lead out in console message 'Was canceled by User!'.
+// Otherwise count general price order and save into variable  'totalPrice'.
+// Check is user able to pay for order? : if amount for pay more that quantity credits on balance
+// will show in console message 'Doesn't enough money on your balance!'.
+// In another case have to count hkw many credits left on balance and show in
+//console  message 'You bought [number] Droids, on balance left [number] credits.'.?
 const credits = 23580;
 const pricePerDroid = 3000;
 let message = "How many Do you want to buy 'Droids'?Write in thing";
-const  input = prompt(message);
+const input = prompt(message);
 let totalPrice;
-if(input === null){
-        message = 'user is canceled!';
-} else { if(Number.isNaN(Number(input))){
-    message = 'you put not a number!please rewrete!';
+if (input === null) {
+  message = "user is canceled!";
 } else {
-    totalPrice = Number(input)*pricePerDroid;
-     if(credits < totalPrice) {
-    message = 'do not have enough many on your rent!';
-} else {
-    message = `You buy ${input} droids. Cost per droid is ${pricePerDroid},
-total prise is ${totalPrice}. You have ${credits - totalPrice} money after buy.`
+  if (Number.isNaN(Number(input))) {
+    message = "You put not a number!Please rewrite!";
+  } else {
+    totalPrice = Number(input) * pricePerDroid;
+    if (credits < totalPrice) {
+      message = "do not have enough many on your balance!";
+    } else {
+      message = `You buy ${input} droids. Cost per droid is ${pricePerDroid},
+total prise is ${totalPrice}. You have ${
+        credits - totalPrice
+      } money after buy.`;
     }
   }
 }

@@ -1,21 +1,16 @@
-// Завдання 2
-// Напиши скрипт перевірки кількості товарів на складі. Є змінні total (кількість товарів на складі) і ordered (одиниць товару в замовленні).
-
-// Порівняй ці значення і за результатами виведи:
-
-// Якщо в замовленні вказано число, що перевищує кількість товарів на складі, то виведи повідомлення "На складі недостатньо товарів!".
-// В іншому випадку виводь повідомлення "Замовлення оформлено, з вами зв'яжеться менеджер".
-// Перевір працездатність коду з різними значеннями змінної ordered, наприклад 20, 80 і 130.
-
-// const total = 100;
-// const ordered = 50;
+// Exercise 2
+// Write check script for quantity products on storage .Is variables total (amount products on warehouse)
+// and ordered (units in order).
+// Compare those values and by result lead out :
+// If in order is number which is more than limit on storage than lead out alert "In warehouse is not enough quantity !".
+// In another case show message "Order has completed manager is going to call you!".
+// Check how this code works with different 'ordered' value , for example 20, 80 and 130.
 const total = 100;
 const ordered = 90;
 let message;
-if(ordered > total) {
-    message = "We dont have enough products on storehouse!";
-} else{
-    message = "Oreder is accepted ,our maneger going to call you!";
+if (ordered > total) {
+  message = "We don't have enough products on storehouse!";
+} else {
+  message = "Order is accepted ,our manager is going to call you!";
 }
 console.log(message);
-

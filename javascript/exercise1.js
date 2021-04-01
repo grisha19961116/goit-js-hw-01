@@ -1,15 +1,14 @@
-// Завдання 1
-// Оголоси дві змінні, які зберігають назву та ціну товару: name і price
-// Присвойте змінним наступні характеристики товару (відразу при оголошенні)
-// назва: Генератор захисного поля
-// ціна: 1000
-// Використовуючи стандартний рядок виведи в консоль інформацію про товар, вийде: 'Обрано «Генератор захисного поля», ціна за штуку 1000 кредитів'.
-// Присвой товару нову ціну - 2000
-// Використовуючи стандартний рядок виведи в консоль інформацію про товар, вийде: 'Обрано «Генератор захисного поля», ціна за штуку 2000 кредитів'.
-const name = "Generator protection field";
-let price = 1000 ;
-let generalInformationAboutProcess = `Chosen "${name}" , price per think is ${price} credits.`;
+// Exercise 1
+// Give names for two variables, which can save name and price for product
+// Give for variables next meanings about product (invoke immediately during process )
+// name: Generator protection field , price: 1000
+// Using common row input in console information about product ,
+// have to be : 'Selected "Generator protection field", price per think 1000 credits '.
+// Sign for product new price - 2000
+const nameGenerator = "Generator protection field";
+let price = 1000;
+let generalInformationAboutProcess = `Selected "${nameGenerator}" , price per think is ${price} credits.`;
 console.log(generalInformationAboutProcess);
 price = 2000;
-generalInformationAboutProcess = `Chosen "${name}" , price per think is ${price} credits.`;
+generalInformationAboutProcess = `Selected "${nameGenerator}" , price per think is ${price} credits.`;
 console.log(generalInformationAboutProcess);
