@@ -1,9 +1,9 @@
 // Exercise 1
-// Give names for two variables, which can save name and price for product
+// Name names for two variables, which can save name and price for product
 // Give for variables next meanings about product (invoke immediately during process )
 // name: Generator protection field , price: 1000
 // Using common row input in console information about product ,
-// have to be : 'Selected "Generator protection field", price per think 1000 credits '.
+// have to be : 'Selected "Generator protection field", price per thing 1000 credits '.
 // Sign for product new price - 2000
 const nameGenerator = "Generator protection field";
 let price = 1000;
